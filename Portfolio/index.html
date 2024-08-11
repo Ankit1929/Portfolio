@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26027d70f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="Images/Logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Serives</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Digital Marketer</p>
+                <h1>Hi, I'm <span>Ankit Kumar</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section to explain my self -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/User.png" alt="User">
+            </div>
+            <div class="about-col-2">
+                <h1 class="Sub title">About Me</h1>
+                <p>As a results-oriented digital marketer with a B.A. (Hons) in Business Economics and an ongoing MBA, I have a proven track record in driving online growth. With over a year of experience, I excel in SEO, PPC, content creation, market research, data analysis, social media management, and email marketing. My ability to develop and execute innovative digital strategies has consistently delivered measurable results for businesses. I am a quick learner, adaptable, and possess strong problem-solving skills. Passionate about the dynamic digital landscape, I am eager to contribute to your team's success.</p>
+                
+                <div class="tab-title">
+                    <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                    <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                    <div class="tab-links" onclick="opentab('education')">Education</div>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>PAY PER CLICK</span><br>Google Ads and Meta Ads</li>
+                        <li><span>CONTENT WRITING</span><br>Article, Blogs, and Listicles</li>
+                        <li><span>SEARCH ENGINE OPTIMIZATION (SEO)</span><br>Technical, On Page, and Off Page</li>
+                        <li><span>SOCIAL MEDIA MANAGEMENT</span><br>Social Media Optimization and Social Media Marketing</li>
+                        <li><span>DESIGN AND EDITING</span><br>Landing Page, Creative designs, and Video Editing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Dec,2023 - Jun,2024</span><br>Content Analyst Intern</li>
+                        <li><span>Mar,2023 - Dec,2023</span><br>Digital Marketer</li>
+                        <li><span>Aug,2024 - Mar,2023</span><br>Digital Marketer Intern</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Present</span><br>Master of Business Administration</li>
+                        <li><span>2017 - 2020</span><br>Bachelor of Business Economics (BBE)</li>
+                        <li><span>2016 - 2017</span><br>Commerce</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- Services/Experience -->
+ <div id="services">
+    <div class="container">
+        <h1 class="Sub title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-google"></i>
+                <h2>Pay Per Click (PPC)</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime libero architecto provident ratione aut. Ut in unde eveniet rerum cumque quaerat aliquam nobis obcaecati ipsum, cupiditate officiis! Illum, mollitia quos?</p>
+                <a href="Learn More"><b>Learn More</b></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Content Writing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime libero architecto provident ratione aut. Ut in unde eveniet rerum cumque quaerat aliquam nobis obcaecati ipsum, cupiditate officiis! Illum, mollitia quos?</p>
+                <a href="https://www.geeksforgeeks.org/user/ankitkumar01/contributions/" target="_blank"><b>Learn More</b></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-key"></i>
+                <h2>SEO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime libero architecto provident ratione aut. Ut in unde eveniet rerum cumque quaerat aliquam nobis obcaecati ipsum, cupiditate officiis! Illum, mollitia quos?</p>
+                <a href="Learn More"><b>Learn More</b></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hashtag"></i>
+                <h2>Social Media Managemant</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime libero architecto provident ratione aut. Ut in unde eveniet rerum cumque quaerat aliquam nobis obcaecati ipsum, cupiditate officiis! Illum, mollitia quos?</p>
+                <a href="Learn More"><b>Learn More</b></a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="Sub title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Instagram-MG.jpeg" alt="SMM">
+                <div class="layer">
+                    <h3>Social Media Management</h3>
+                    <p>Optimise instagram profile and using variours strategies to reach new audience.</p>
+                    <a href="https://www.instagram.com/mindgroomcareercounselling/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Youtube-MG.jpeg" alt="Video Editing">
+                <div class="layer">
+                    <h3>Video Editing</h3>
+                    <p>Edited videos for youtube and Social media in short and long form video.</p>
+                    <a href="https://www.youtube.com/@mindgroom1987" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Content Writing-GFG.jpeg" alt="Content Writing">
+                <div class="layer">
+                    <h3>Content Writing</h3>
+                    <p>Written high quality articles, blogs and listicle using SEO best practices.</p>
+                    <a href="https://www.geeksforgeeks.org/user/ankitkumar01/contributions/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- Contact Form  -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="cotact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> ankitkumar192938@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91-9870105425</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/ankitkumarmarketing/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/Ankit-Kumar-CV.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="cotact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"> </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ankit - 2024</p>
+    </div>
+ </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function clossmenu(){
+        sidemenu.style.right = "-200px"
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbywjcCMzeZ6dTWEdJOo5m5xBksgJYm3yHilQX2EJvpaa82U17caCsaK7cPHJHVTE6vF/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.rest()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
